@@ -472,6 +472,12 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+.mail_ID{
+  display: flex;
+}
+.mail_ID img{
+  margin: 0px 12px;
+}
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
