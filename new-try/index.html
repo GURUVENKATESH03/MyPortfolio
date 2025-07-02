@@ -1,633 +1,748 @@
 <html>
-  <head>
+
+<head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
-    />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" />
 
     <title>Portfolio.</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
-      style="font-family: 'Space Grotesk', 'Noto Sans', sans-serif"
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <header
-          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3"
-        >
-          <div class="flex items-center gap-4 text-[#0d141c]">
-            <div class="size-4">
-              <svg
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
-                  fill="currentColor"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2
-              class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]"
-            >
-              Guru's Portfolio
-            </h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a
-                class="text-[#0d141c] text-sm font-medium leading-normal"
-                href="#"
-                >About</a
-              >
-              <a
-                class="text-[#0d141c] text-sm font-medium leading-normal"
-                href="#"
-                >Contact</a
-              >
-              <a
-                class="text-[#0d141c] text-sm font-medium leading-normal"
-                href="#"
-                >Projects</a
-              >
-              <a
-                class="text-[#0d141c] text-sm font-medium leading-normal"
-                href="#"
-                >Skills</a
-              >
-              <a
-                class="text-[#0d141c] text-sm font-medium leading-normal"
-                href="#"
-                >Services</a
-              >
-            </div>
-            <div class="flex gap-2">
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf4] text-[#0d141c] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div
-                  class="text-[#0d141c]"
-                  data-icon="GithubLogo"
-                  data-size="20px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-                    ></path>
-                  </svg>
+</head>
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+        style="font-family: 'Space Grotesk', 'Noto Sans', sans-serif">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+                <div class="flex items-center gap-4 text-[#0d141c]">
+                    <div class="size-4">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
+                                fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">
+                        Guru's Portfolio
+                    </h2>
                 </div>
-              </button>
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf4] text-[#0d141c] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div
-                  class="text-[#0d141c]"
-                  data-icon="LinkedinLogo"
-                  data-size="20px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
-                    ></path>
-                  </svg>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">About</a>
+                        <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Contact</a>
+                        <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Projects</a>
+                        <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Skills</a>
+                        <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Services</a>
+                    </div>
+                    <div class="flex gap-2">
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf4] text-[#0d141c] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                            <div class="text-[#0d141c]" data-icon="GithubLogo" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf4] text-[#0d141c] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                            <div class="text-[#0d141c]" data-icon="LinkedinLogo" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
                 </div>
-              </button>
-            </div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div
-            class="layout-content-container flex flex-col max-w-[960px] flex-1"
-          >
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style="
+            </header>
+            <div class="px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="@container">
+                        <div class="@[480px]:p-4">
+                            <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                                style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.1) 0%,
                         rgba(0, 0, 0, 0.4) 100%
                       ),
                       url('https://wallpaperaccess.com/full/3239444.jpg');
-                  "
-                >
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Hi, I'm Guru
-                    </h1>
-                    <h2
-                      class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
-                    >
-                      A passionate Java Developer with a focus on creating
-                      intuitive and engaging user experiences.
+                  ">
+                                <div class="flex flex-col gap-2 text-left">
+                                    <h1
+                                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                        Hi, I'm Guru
+                                    </h1>
+                                    <h2
+                                        class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                        A passionate Java Developer with a focus on creating
+                                        intuitive and engaging user experiences.
+                                    </h2>
+                                </div>
+                                <a
+                                    href="https://drive.google.com/file/d/18m2etKb1giY0VygiwIQ7YeAWJc4h6Aoe/view?usp=sharing">
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                                        <span class="truncate">Resume</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                        About Me
                     </h2>
-                  </div>
-                  <a
-                    href="https://drive.google.com/file/d/18m2etKb1giY0VygiwIQ7YeAWJc4h6Aoe/view?usp=sharing"
-                  >
-                    <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                    >
-                      <span class="truncate">Resume</span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h2
-              class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              About Me
-            </h2>
-            <p
-              class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4"
-            >
-              Versatile Electronics Engineering graduate with hands-on
-              experience in full-stack development using Java, Spring Boot,
-              MySQL for backend, and React.js/ Thymeleaf, HTML, CSS for
-              frontend. Adept at building end-to-end web applications with a
-              focus on clean architecture, responsive UI, and RESTful API
-              integration. Eager to contribute to collaborative software teams
-              and grow as a full-stack Java developer in a dynamic work
-              environment.
-            </p>
-            <h2
-              class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              Projects
-            </h2>
-            <div class="grid grid-cols-2 gap-6 p-4 max-w-6xl mx-auto">
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  style="
+                    <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4 text-justify">
+                        Versatile Electronics Engineering graduate with hands-on
+                        experience in full-stack development using Java, Spring Boot,
+                        MySQL for backend, and React.js/ Thymeleaf, HTML, CSS for
+                        frontend. Adept at building end-to-end web applications with a
+                        focus on clean architecture, responsive UI, and RESTful API
+                        integration. Eager to contribute to collaborative software teams
+                        and grow as a full-stack Java developer in a dynamic work
+                        environment.
+                    </p>
+                    <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                        Projects
+                    </h2>
+                    <div class="grid grid-cols-2 gap-6 p-4 max-w-6xl mx-auto">
+                        <div class="flex flex-col gap-3 pb-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
                     background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJfDesfuQ1GkqxZIszIXqD-r2Jmk7rUCO35H98Nkcd-HK0YU-U3Q7kIuWaiLQfu8YVBllOZzAadVnoSaiytKsZ1BCyh80EgJE1teL88oUFWSD-71Qz7jHPzwm53YUk60RSXbwxNl_jScejyUfoGzIq11GhKpI3zgB7B_Ktx79PlfZXbjLrg8feWPj-XkJOhqXfdG4ka1AzYhcbRkMC75BNBRlbu7RVLm9CI1_yH3C0b0nW4bWl5HZmDHvwAOTOwyf1J8iJHUDvkOY');
-                  "
-                ></div>
-                <div>
-                  <p
-                    class="text-[#0d141c] text-base font-medium leading-normal"
-                  >
-                    Project 1: Resume Analyzer
-                  </p>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    A Web application built with Spring Boot, Python NLP
-                    microservice, and Thymeleaf for intelligent resume screening
-                    and feedback.
-                  </p>
-                </div>
-                <div class="flex gap-2">
-                  <a
-                    href="https://github.com/your-repo-url-1"
-                    target="_blank"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                    >GitHub</a
-                  >
-                  <button
-                    onclick="openModal('modal1')"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                  >
-                    Info
-                  </button>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  style="
+                  "></div>
+                            <div>
+                                <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                    Project 1: Resume Analyzer
+                                </p>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    A Web application built with Spring Boot, Python NLP
+                                    microservice, and Thymeleaf for intelligent resume screening
+                                    and feedback.
+                                </p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="px-4 py-1 text-sm bg-red-700 text-white rounded">
+                                    Individual Project
+                                </button>
+                                <a href="https://github.com/GURUVENKATESH03/Resume-Analyzer" target="_blank"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                <button onclick="openModal('modal1')"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 pb-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
                     background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbjOYEWgFvpGBADDCoXLXin3brrhhOPjpH8QM7-2Qz8yFz_v6HmZiy_7aV-e6PIpM1v925sldMZ_uG0UAMuifw75hBcdNMSNUrtFuEs1tjV-loHbY2XjW3ovlj3nOcXnSTzi2W5-iM_Flh6R_J1B8sxzjdGG7NjMmcLn74qZ3w0u1GfeQ0NR4zJWvhlhdu0Utf5gwfNFNRChjjKIfC-jDtJtPmkNh3x30N1odiO9DxCZyFTZLLVvJBs_O1ZHUnPYHrwzl7do36wAw');
-                  "
-                ></div>
-                <div>
-                  <p
-                    class="text-[#0d141c] text-base font-medium leading-normal"
-                  >
-                    Project 2: Meal Share
-                  </p>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    MealShare is a food waste reduction platform that connects donors with nearby recipients using Spring Boot, Thymeleaf/React, and location-based services.
-                  </p>
-                </div>
-                <div class="flex gap-2">
-                  <a
-                    href="https://github.com/your-repo-url-1"
-                    target="_blank"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                    >GitHub</a
-                  >
-                  <button
-                    onclick="openModal('modal2')"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                  >
-                    Info
-                  </button>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  style="
+                  "></div>
+                            <div>
+                                <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                    Project 2: Meal Share
+                                </p>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    MealShare is a food waste reduction platform that connects
+                                    donors with nearby recipients using Spring Boot,
+                                    Thymeleaf/React, and location-based services.
+                                </p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="px-4 py-1 text-sm bg-red-700 text-white rounded">
+                                    Individual Project
+                                </button>
+                                <a href="https://github.com/GURUVENKATESH03/foodsaver" target="_blank"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                <button onclick="openModal('modal2')"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 pb-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
                     background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
-                  "
-                ></div>
-                <div>
-                  <p
-                    class="text-[#0d141c] text-base font-medium leading-normal"
-                  >
-                    Project 3: Event Management System
-                  </p>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    Developed a Spring Boot-based web application to streamline event creation, registration, and overall lifecycle management.
-                  </p>
-                </div>
-                <div class="flex gap-2">
-                  <a
-                    href="https://github.com/your-repo-url-1"
-                    target="_blank"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                    >GitHub</a
-                  >
-                  <button
-                    onclick="openModal('modal3')"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                  >
-                    Info
-                  </button>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  style="
+                  "></div>
+                            <div>
+                                <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                    Project 3: Event Management System
+                                </p>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    Developed a Spring Boot-based web application to streamline
+                                    event creation, registration, and overall lifecycle
+                                    management.
+                                </p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="px-4 py-1 text-sm bg-red-700 text-white rounded">
+                                    Individual Project
+                                </button>
+                                <a href="https://github.com/GURUVENKATESH03/EventManagement" target="_blank"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                <button onclick="openModal('modal3')"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 pb-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
                     background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
-                  "
-                ></div>
-                <div>
-                  <p
-                    class="text-[#0d141c] text-base font-medium leading-normal"
-                  >
-                    Project 4: Some Basic Spring Boot Projects
-                  </p>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    A collection of basic Spring Boot projects focused on building foundational backend skills through practical applications like CRUD operations, RESTful APIs, and data management.
-                  </p>
-                </div>
-                <div class="flex gap-2">
-                  <a
-                    href="https://github.com/your-repo-url-1"
-                    target="_blank"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                    >GitHub</a
-                  >
-                  <button
-                    onclick="openModal('modal3')"
-                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700"
-                  >
-                    Info
-                  </button>
-                </div>
-              </div>
-              <!-- Modals -->
-              <div
-                id="modal1"
-                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
-              >
-                <div class="bg-white p-6 rounded-lg max-w-md w-full relative">
-                  <button
-                    onclick="closeModal('modal1')"
-                    class="absolute top-2 right-3 text-xl font-bold"
-                  >
-                    &times;
-                  </button>
-                  <h2 class="text-lg font-semibold mb-2">
-                    Project 1: Resume Analyzer
-                  </h2>
-                  <p class="text-sm text-gray-700">
-                    This project uses Spring Boot as a backend framework to
-                    serve a web interface built with Thymeleaf. It integrates a
-                    Python-based microservice using NLP to analyze and score
-                    resumes based on job descriptions.
-                  </p>
-                </div>
-              </div>
+                  "></div>
+                            <div>
+                                <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                    Project 4: Some Basic Spring Boot Projects
+                                </p>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    A collection of basic Spring Boot projects focused on
+                                    building foundational backend skills through practical
+                                    applications like CRUD operations, RESTful APIs, and data
+                                    management.
+                                </p>
+                            </div>
+                            <button
+                                    class="px-4 py-1 text-sm bg-red-700 text-white rounded">
+                                    Individual Project
+                                </button>
+                        </div>
+                        <div class="flex flex-col gap-3 pb-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
+                  "></div>
+                            <div>
+                                <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                    Project 5: Voice enabled Text Reader for Visually Impaired
+                                </p>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    A voice-enabled text reader that extracts text from images
+                                    and reads it aloud, designed to assist visually impaired
+                                    users.
+                                </p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="px-4 py-1 text-sm bg-green-700 text-white rounded">
+                                    Group Project
+                                </button>
+                                <a href="https://github.com/GURUVENKATESH03/EasyOCR-and-Transliteration" target="_blank"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                <button onclick="openModal('modal5')"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
 
-              <div
-                id="modal2"
-                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
-              >
-                <div class="bg-white p-6 rounded-lg max-w-md w-full relative">
-                  <button
-                    onclick="closeModal('modal2')"
-                    class="absolute top-2 right-3 text-xl font-bold"
-                  >
-                    &times;
-                  </button>
-                  <h2 class="text-lg font-semibold mb-2">
-                    Project 2: Meal Share
-                  </h2>
-                  <p class="text-sm text-gray-700">
-                    A fitness tracking mobile UI with modern UX design and
-                    wireframes. Built using Figma and designed for Android/iOS
-                    usability.
-                  </p>
-                </div>
-              </div>
+                        <div class="flex flex-col gap-3 pb-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
+                  "></div>
+                            <div>
+                                <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                    Project 6: Speech to Text Web Application
+                                </p>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    A speech-to-text web application that converts spoken words
+                                    into written text in real-time for improved accessibility
+                                    and user interaction.
+                                </p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="px-4 py-1 text-sm bg-red-700 text-white rounded">
+                                    Individual Project
+                                </button>
+                                <a href="https://github.com/your-repo-url-1" target="_blank"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                <button onclick="openModal('modal6')"
+                                    class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Modals -->
+                        <div id="modal1"
+                            class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                            <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                <button onclick="closeModal('modal1')" class="absolute top-2 right-3 text-xl font-bold">
+                                    &times;
+                                </button>
+                                <h2 class="text-lg font-semibold mb-2">
+                                    Project 1: Resume Analyzer
+                                </h2>
+                                <div class="text-black-700 mt-4 text-justify px-4 py-2">
+                                    <h2 class="text-xl font-semibold mb-2">Overview</h2>
+                                    <p>
+                                        An intelligent web-based application designed to
+                                        automatically analyze and evaluate resumes using NLP
+                                        techniques. It helps recruiters and job seekers by
+                                        providing detailed feedback on resume structure, keyword
+                                        optimization, and job-fit analysis.
+                                    </p>
 
-              <div
-                id="modal3"
-                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
-              >
-                <div class="bg-white p-6 rounded-lg max-w-md w-full relative">
-                  <button
-                    onclick="closeModal('modal3')"
-                    class="absolute top-2 right-3 text-xl font-bold"
-                  >
-                    &times;
-                  </button>
-                  <h2 class="text-lg font-semibold mb-2">
-                    Project 3: Branding Identity
-                  </h2>
-                  <p class="text-sm text-gray-700">
-                    Complete visual branding package including logo, color
-                    palette, business cards, and typography designed for a tech
-                    startup.
-                  </p>
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li><strong>Backend:</strong> Spring Boot (Java)</li>
+                                        <li>
+                                            <strong>Microservice (NLP):</strong> Python (spaCy,
+                                            NLTK, Transformers)
+                                        </li>
+                                        <li><strong>Frontend:</strong> Thymeleaf</li>
+                                        <li><strong>Database:</strong> No Database is used</li>
+                                        <li><strong>Others:</strong> RESTful APIs</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">
+                                        Key Features
+                                    </h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Upload resumes in PDF/Word format for analysis</li>
+                                        <li>Extract and parse resume data using Python NLP</li>
+                                        <li>
+                                            Evaluate resume quality based on industry-specific
+                                            keywords, grammar, and formatting
+                                        </li>
+                                        <li>Score resumes and provide improvement suggestions</li>
+                                        <li>Match resume content against job descriptions</li>
+                                        <li>Download the report for your resume as a PDF</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">
+                                        Contributions
+                                    </h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>
+                                            Implemented RESTful endpoints for secure resume upload
+                                            and retrieval
+                                        </li>
+                                        <li>
+                                            Designed dynamic frontend in React for seamless user
+                                            interaction
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal2"
+                            class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                            <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                <button onclick="closeModal('modal2')" class="absolute top-2 right-3 text-xl font-bold">
+                                    &times;
+                                </button>
+                                <h2 class="text-lg font-semibold mb-2">
+                                    Project 2: Meal Share
+                                </h2>
+                                <div class="text-black-700 mt-4 text-justify px-4 py-2">
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                    <p>
+                                        A social platform that bridges the gap between food donors
+                                        (like restaurants, households) and receivers (NGOs,
+                                        individuals), aiming to reduce food waste and feed the
+                                        needy through real-time donations.
+                                    </p>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li><strong>Backend:</strong> Spring Boot (Java)</li>
+                                        <li><strong>Frontend:</strong> React.js/Thymeleaf</li>
+                                        <li><strong>Database:</strong> MySQL</li>
+                                        <li>
+                                            <strong>Map Integration:</strong> Google Maps API or
+                                            Leaflet.js
+                                        </li>
+                                        <li><strong>Authentication:</strong> JWT</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">
+                                        Key Features
+                                    </h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Register as a donor or receiver</li>
+                                        <li>
+                                            Post available food with quantity and expiry details
+                                        </li>
+                                        <li>View nearby food listings on a map with filters</li>
+                                        <li>Claim food donations and get pickup directions</li>
+                                        <li>Admin dashboard for user and donation management</li>
+                                        <li>Notification system for new food availability</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">
+                                        Contributions
+                                    </h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Designed REST APIs for user and food management</li>
+                                        <li>Integrated geolocation services and map views</li>
+                                        <li>
+                                            Implemented secure user authentication and role-based
+                                            access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal3"
+                            class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                            <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                <button onclick="closeModal('modal3')" class="absolute top-2 right-3 text-xl font-bold">
+                                    &times;
+                                </button>
+                                <h2 class="text-lg font-semibold mb-2">
+                                    Project 2: Event Management System
+                                </h2>
+                                <div class="text-black-700 mt-4 text-justify px-4 py-2">
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                    <p>
+                                        A web-based system that streamlines the process of managing and attending
+                                        events, conferences, or workshops.
+                                        It supports event creation, attendee registration, and admin analytics.
+                                    </p>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li><strong>Backend:</strong> Spring Boot</li>
+                                        <li><strong>Frontend:</strong> Thymeleaf</li>
+                                        <li><strong>Database:</strong> MySQL</li>
+                                        <li><strong>Others:</strong> Spring Security, MVC architecture</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Key Features</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Create, update, and delete events with date, location, and description
+                                        </li>
+                                        <li>Register users for events with auto-email confirmation</li>
+                                        <li>Role-based login (Admin, Organizer, Attendee)</li>
+                                        <li>Admin dashboard to monitor event statistics and attendance</li>
+                                        <li>Search and filter events by category/date</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Contributions</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Developed end-to-end CRUD functionality for event workflows</li>
+                                        <li>Configured role-based access using Spring Security</li>
+                                        <li>Built dynamic pages using Thymeleaf templates or React</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal6"
+                            class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                            <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                <button onclick="closeModal('modal6')" class="absolute top-2 right-3 text-xl font-bold">
+                                    &times;
+                                </button>
+                                <h2 class="text-lg font-semibold mb-2">
+                                    Project 6: Speech-to-Text Web Application
+                                </h2>
+                                <div class="text-black-700 mt-4 text-justify px-4 py-2">
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                    <p>
+                                        A real-time speech-to-text web application that converts spoken words into
+                                        written text using the Web Speech API.
+                                        It supports multiple languages, displays interim results while listening, and
+                                        allows users to download or clear the transcribed text.
+                                        This tool enhances accessibility, productivity, and voice-driven interaction
+                                        directly in the browser.
+                                    </p>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript (Vanilla)</li>
+                                        <li><strong>API:</strong> Web Speech API (SpeechRecognition)</li>
+                                        <li><strong>Browser Support:</strong> Chrome, Edge (with
+                                            `webkitSpeechRecognition` fallback)</li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Key Features</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Start and stop live speech recognition with a toggle button</li>
+                                        <li>Displays interim transcription while speaking</li>
+                                        <li>Final transcribed text is appended to the result area</li>
+                                        <li>Supports multiple languages selectable from a dropdown</li>
+                                        <li>Download the transcribed text as a `.txt` file</li>
+                                        <li>Clear button to reset the result area</li>
+                                        <li>Handles various errors: no speech, mic not found, permission denied, etc.
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Contributions</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Implemented live speech recognition with proper error handling</li>
+                                        <li>Built language selection logic using dynamic option population</li>
+                                        <li>Added support for interim and final transcript handling</li>
+                                        <li>Integrated download and clear functionality for usability</li>
+                                        <li>Designed user feedback via UI updates and alerts</li>
+                                    </ul>
+                                </div>
+                                <a
+                                 class="flex justify-center"
+                                 href="https://guruvenkatesh03.github.io/Transcribe_Audio_03/">
+                                    <button
+                                    class="px-4 py-1 text-sm bg-green-700 text-white rounded">
+                                    Live Demo
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="modal5"
+                            class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                            <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto w-full relative">
+                                <button onclick="closeModal('modal5')" class="absolute top-2 right-3 text-xl font-bold">
+                                    &times;
+                                </button>
+                                <h2 class="text-lg font-semibold mb-2">
+                                    Project 5: Voice enabled Text Reader for Visually Impaired
+                                </h2>
+                                <div class="text-black-700 mt-4 text-justify px-4 py-2">
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                    <p>
+                                        Our system offers a voice-activated, completely offline text-to-speech framework
+                                        developed for the Raspberry Pi 5 to address the accessibility challenges faced
+                                        by visually impaired individuals.
+                                        It captures text from printed documents or images and reads it aloud using
+                                        natural speech synthesis, significantly improving access to printed content.
+                                    </p>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li><strong>Language:</strong> Python</li>
+                                        <li><strong>OCR:</strong> EasyOCR for multilingual recognition (English,
+                                            Kannada, Telugu)</li>
+                                        <li><strong>Image Preprocessing:</strong> CLAHE (Contrast Enhancement), Median
+                                            Blurring (Noise Reduction)</li>
+                                        <li><strong>Text Refinement:</strong> SymSpell (Spell Correction), IndicNLP
+                                            (Text Normalization)</li>
+                                        <li><strong>Transliteration:</strong> Rule-based Multilingual Attentive
+                                            Transliteration System</li>
+                                        <li><strong>Text-to-Speech:</strong> pyttsx3 (Offline Speech Synthesis)</li>
+
+                                        <li><strong>Hardware:</strong> Raspberry Pi 5 (for portable offline deployment)
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Key Features</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Capture or upload images containing text</li>
+                                        <li>Multilingual OCR for English, Kannada, and Telugu using EasyOCR</li>
+                                        <li>Enhanced image preprocessing for better accuracy under poor lighting</li>
+                                        <li>Text refinement through spell correction and normalization</li>
+                                        <li>Rule-based transliteration for phonetic clarity of Indic scripts</li>
+                                        <li>Offline text-to-speech conversion using pyttsx3</li>
+                                        <li>Real-time audio output with voice customization (pitch/speed)</li>
+                                        <li>Fully offline support, ideal for remote and low-connectivity environments
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="text-lg font-semibold mt-4 mb-1">Contributions</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Developed the full OCR-to-speech pipeline with multilingual support</li>
+                                        <li>Implemented image preprocessing (CLAHE, blurring) for OCR enhancement</li>
+                                        <li>Integrated SymSpell and IndicNLP for text correction and normalization</li>
+                                        <li>Configured a rule-based transliteration model for clearer speech output</li>
+                                        <li>Integrated pyttsx3 for smooth, offline voice synthesis</li>
+                                        <li>Optimized the solution to run efficiently on Raspberry Pi 5 hardware</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                        Skills
+                    </h2>
+                    <div class="flex gap-3 p-3 flex-wrap pr-4">
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                UI/UX Design
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                Branding
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                Web Development
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                Figma
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                Adobe Creative Suite
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                HTML
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                CSS
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                JavaScript
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                User Research
+                            </p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4">
+                            <p class="text-[#0d141c] text-sm font-medium leading-normal">
+                                Prototyping
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                        Services Offered
+                    </h2>
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                        <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                            <div class="text-[#0d141c]" data-icon="PencilSimple" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h2 class="text-[#0d141c] text-base font-bold leading-tight">
+                                    UI/UX Design
+                                </h2>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    Crafting intuitive and engaging user interfaces for web and
+                                    mobile applications.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                            <div class="text-[#0d141c]" data-icon="Monitor" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h2 class="text-[#0d141c] text-base font-bold leading-tight">
+                                    Web Development
+                                </h2>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    Building responsive and dynamic websites tailored to your
+                                    specific needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                            <div class="text-[#0d141c]" data-icon="Megaphone" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M240,120a48.05,48.05,0,0,0-48-48H152.2c-2.91-.17-53.62-3.74-101.91-44.24A16,16,0,0,0,24,40V200a16,16,0,0,0,26.29,12.25c37.77-31.68,77-40.76,93.71-43.3v31.72A16,16,0,0,0,151.12,214l11,7.33A16,16,0,0,0,186.5,212l11.77-44.36A48.07,48.07,0,0,0,240,120ZM40,199.93V40h0c42.81,35.91,86.63,45,104,47.24v65.48C126.65,155,82.84,164.07,40,199.93Zm131,8,0,.11-11-7.33V168h21.6ZM192,152H160V88h32a32,32,0,1,1,0,64Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h2 class="text-[#0d141c] text-base font-bold leading-tight">
+                                    Branding
+                                </h2>
+                                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                    Developing comprehensive brand identities that resonate with
+                                    your target audience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                        Contact
+                    </h2>
+                    <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                        <label class="flex flex-col min-w-40 flex-1">
+                            <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">
+                                Your Name
+                            </p>
+                            <input placeholder="Enter your name"
+                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
+                                value="" />
+                        </label>
+                    </div>
+                    <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                        <label class="flex flex-col min-w-40 flex-1">
+                            <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">
+                                Your Email
+                            </p>
+                            <input placeholder="Enter your email"
+                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
+                                value="" />
+                        </label>
+                    </div>
+                    <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                        <label class="flex flex-col min-w-40 flex-1">
+                            <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">
+                                Your Message
+                            </p>
+                            <textarea placeholder="Enter your message"
+                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none min-h-36 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"></textarea>
+                        </label>
+                    </div>
+                    <div class="flex px-4 py-3 justify-start">
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+                            <span class="truncate">Send Message</span>
+                        </button>
+                    </div>
                 </div>
-              </div>
             </div>
-            <h2
-              class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              Skills
-            </h2>
-            <div class="flex gap-3 p-3 flex-wrap pr-4">
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  UI/UX Design
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  Branding
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  Web Development
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  Figma
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  Adobe Creative Suite
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  HTML
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  CSS
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  JavaScript
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  User Research
-                </p>
-              </div>
-              <div
-                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#e7edf4] pl-4 pr-4"
-              >
-                <p class="text-[#0d141c] text-sm font-medium leading-normal">
-                  Prototyping
-                </p>
-              </div>
-            </div>
-            <h2
-              class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              Services Offered
-            </h2>
-            <div
-              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
-            >
-              <div
-                class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col"
-              >
-                <div
-                  class="text-[#0d141c]"
-                  data-icon="PencilSimple"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-[#0d141c] text-base font-bold leading-tight">
-                    UI/UX Design
-                  </h2>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    Crafting intuitive and engaging user interfaces for web and
-                    mobile applications.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col"
-              >
-                <div
-                  class="text-[#0d141c]"
-                  data-icon="Monitor"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-[#0d141c] text-base font-bold leading-tight">
-                    Web Development
-                  </h2>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    Building responsive and dynamic websites tailored to your
-                    specific needs.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col"
-              >
-                <div
-                  class="text-[#0d141c]"
-                  data-icon="Megaphone"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                  >
-                    <path
-                      d="M240,120a48.05,48.05,0,0,0-48-48H152.2c-2.91-.17-53.62-3.74-101.91-44.24A16,16,0,0,0,24,40V200a16,16,0,0,0,26.29,12.25c37.77-31.68,77-40.76,93.71-43.3v31.72A16,16,0,0,0,151.12,214l11,7.33A16,16,0,0,0,186.5,212l11.77-44.36A48.07,48.07,0,0,0,240,120ZM40,199.93V40h0c42.81,35.91,86.63,45,104,47.24v65.48C126.65,155,82.84,164.07,40,199.93Zm131,8,0,.11-11-7.33V168h21.6ZM192,152H160V88h32a32,32,0,1,1,0,64Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-[#0d141c] text-base font-bold leading-tight">
-                    Branding
-                  </h2>
-                  <p class="text-[#49739c] text-sm font-normal leading-normal">
-                    Developing comprehensive brand identities that resonate with
-                    your target audience.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <h2
-              class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-            >
-              Contact
-            </h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p
-                  class="text-[#0d141c] text-base font-medium leading-normal pb-2"
-                >
-                  Your Name
-                </p>
-                <input
-                  placeholder="Enter your name"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p
-                  class="text-[#0d141c] text-base font-medium leading-normal pb-2"
-                >
-                  Your Email
-                </p>
-                <input
-                  placeholder="Enter your email"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p
-                  class="text-[#0d141c] text-base font-medium leading-normal pb-2"
-                >
-                  Your Message
-                </p>
-                <textarea
-                  placeholder="Enter your message"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none min-h-36 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
-                ></textarea>
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-start">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Send Message</span>
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
-  <script>
-  function openModal(id) {
-    document.getElementById(id).classList.remove('hidden');
-  }
-  function closeModal(id) {
-    document.getElementById(id).classList.add('hidden');
-  }
+</body>
+<script>
+    function openModal(id) {
+        document.getElementById(id).classList.remove("hidden");
+    }
+    function closeModal(id) {
+        document.getElementById(id).classList.add("hidden");
+    }
 </script>
+
 </html>
