@@ -1,89 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" />
 
-        <title>Guru Venkatesh</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <title>Guru Venkatesh</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Portfolio</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Guru Venkatesh</span><br>Java
+                    Developer</h1>
+                <a href="https://drive.google.com/file/d/18m2etKb1giY0VygiwIQ7YeAWJc4h6Aoe/view?usp=sharing" class="button">My Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/guru-venkatesh-b3ab16226" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                <a href="https://github.com/GURUVENKATESH03" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60"
+                            href="./assets/img/fda2e9552c5c6c927987797342961fb4.webp" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/Guruvenkatesh-pp22.jpg" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo">Portfolio</a>
+                    <!-- <h2 class="about__subtitle">I'am Guru Venkatesh</h2> -->
+                    <p class="about__text">
+                        Versatile Electronics Engineering graduate with hands-on
+                        experience in <strong>full-stack development</strong> using <strong>Java</strong>,
+                        <strong>Spring Boot</strong>,
+                        <strong>MySQL</strong> for backend, and <strong>React.js/ Thymeleaf</strong>,
+                        <strong>HTML</strong>, <strong>CSS</strong> for
+                        frontend. Adept at building end-to-end web applications with a
+                        focus on <strong>clean architecture</strong>, <strong>responsive UI</strong>, and
+                        <strong>RESTful API</strong>
+                        integration. Eager to contribute to collaborative software teams
+                        and grow as a <strong>full-stack Java developer</strong> in a dynamic work
+                        environment.
+                    </p>
                 </div>
+            </div>
+        </section>
+        <section class="section flex" id="education">
+            <div class=" max-w-3xl mx-auto px-4 py-8">
+                        <h2 class="section-title">Education</h2>
+                        <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+                            <div class="flex flex-col items-center gap-1 pt-3">
+                                <div class="text-[#0d151c]" data-icon="GraduationCap" data-size="24px"
+                                    data-weight="regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <path
+                                            d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-[1.5px] bg-[#cedce8] h-2 grow"></div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#0d151c] text-base font-medium leading-normal">B.E - Electronics and Communication Engineering</p>
+                                <p class="text-[#49749c] text-base font-normal leading-normal">Saranathan College of Engineering, Tiruchirappalli
+                                    (2021-2025)</p>
+                                <p class="text-[#49749c] text-base font-normal leading-normal">CGPA - 8.89</p>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 pb-3">
+                                <div class="w-[1.5px] bg-[#cedce8] h-2"></div>
+                                <div class="text-[#0d151c]" data-icon="GraduationCap" data-size="24px"
+                                    data-weight="regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <path
+                                            d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-[1.5px] bg-[#cedce8] h-2 grow"></div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#0d151c] text-base font-medium leading-normal">HSC</p>
+                                <p class="text-[#49749c] text-base font-normal leading-normal">Rose Mary Higher Secondary School
+                                    (2020-2021)</p>
+                                <p class="text-[#49749c] text-base font-normal leading-normal">Percentage - 90% </p>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 pb-3">
+                                <div class="w-[1.5px] bg-[#cedce8] h-2"></div>
+                                <div class="text-[#0d151c]" data-icon="GraduationCap" data-size="24px"
+                                    data-weight="regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <path
+                                            d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-[1.5px] bg-[#cedce8] h-2 grow"></div>
+                            </div>
+                            <div class="flex flex-1 flex-col py-3">
+                                <p class="text-[#0d151c] text-base font-medium leading-normal">SSLC</p>
+                                <p class="text-[#49749c] text-base font-normal leading-normal">Rose Mary Higher Secondary School
+                                    (2018-2019)</p>
+                                <p class="text-[#49749c] text-base font-normal leading-normal">Percentage - 85.2% </p>
+                            </div>
+                        </div>
+        </section>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title text-black">Skills</h2>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Guru Venkatesh</span><br>Java Developer</h1>
-                    <a href="https://resume-guruvenkatesh.tiiny.site" class="button">My Resume</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/guru-venkatesh-b3ab16226" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                    <a href="https://github.com/GURUVENKATESH03" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="./assets/img/fda2e9552c5c6c927987797342961fb4.webp"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/Guruvenkatesh-pp22.jpg" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">I'am Guru Venkatesh</h2>
-                        <p class="about__text">Versatile Electronics Engineering graduate with hands-on experience in full-stack development using Java, Spring Boot, MySQL for backend, and React.js/ Thymeleaf, HTML, CSS for frontend. Adept at building end-to-end web applications with a focus on clean architecture, responsive UI, and RESTful API integration. Eager to contribute to collaborative software teams and grow as a full-stack Java developer in a dynamic work environment.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
+            <!-- <div class="skills__container bd-grid">
                     <div>
                         <h2 class="skills__subtitle">Professional Skills</h2>
                         <p class="skills__text"></p>
@@ -177,15 +262,119 @@
                     <div>
                         <img src="assets/img/mohammad-rahmani-W-LQbAUhE64-unsplash.jpg" alt="" class="skills__img">
                     </div>
+                </div> -->
+            <div class="flex items-center justify-center gap-3 p-3 flex-wrap pr-4">
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Java
+                    </p>
                 </div>
-            </section>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Spring Boot
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Spring Framework (Core, MVC, Data, Security)
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Thymeleaf
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        React
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Backend Development
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Hiberante / JPA
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Maven
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Lombok
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        MySQL
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        H2
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Java Full Stack Development
+                    </p>
+                </div>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">What i do?</h2>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        RESTful API development
+                    </p>
+                </div>
 
-                <div class="work__container">
-                    <!-- <a href="" class="work__img">
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Version Control - Git / GitHub
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        CSS3
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        HTML5
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Python
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        JavaScript
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Platform - IntelliJ IDEA & Postman
+                    </p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-blue-500 pl-4 pr-4">
+                    <p class="text-white text-sm font-medium leading-normal">
+                        Docker
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">What i do?</h2>
+
+            <div class="work__container bg-grid">
+                <!-- <a href="" class="work__img">
                         <img src="assets/img/work1.jpg" alt="">
                     </a>
                     <a href="" class="work__img">
@@ -204,7 +393,7 @@
                         <img src="assets/img/work6.jpg" alt="">
                     </a> -->
 
-                <div class="MYrow">
+                <!-- <div class="MYrow">
                     <div class="MY1">
                         <p class="HEADING">Creating SpringBoot Applications</p>
                         <hr style="padding: 0;border: 1px solid black; width: 90%;">
@@ -256,107 +445,561 @@
 
                     </div>
 
-                </div>
+                </div> -->
+                <div id="my" class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                            <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                                <div class="text-[#0d141c]" data-icon="PencilSimple" data-size="24px"
+                                    data-weight="regular">
+                                    <img src="/assets/img/backend.png" height="24px" width="24px" alt="" srcset="">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">
+                                        Backend Development
+                                    </h2>
+                                    <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                        Designing efficient APIs and backend architectures using modern frameworks to
+                                        handle complex data and integrations.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                                <div class="text-[#0d141c]" data-icon="Monitor" data-size="24px" data-weight="regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <path
+                                            d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">
+                                        Web Development
+                                    </h2>
+                                    <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                        Building responsive and dynamic websites tailored to your
+                                        specific needs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4 flex-col">
+                                <div class="text-[#0d141c]" data-icon="Megaphone" data-size="24px"
+                                    data-weight="regular">
+                                    <img src="/assets/img/spring-boot_black.svg" alt="" srcset="">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">
+                                        Building Spring Boot Applications
+                                    </h2>
+                                    <p class="text-[#49739c] text-sm font-normal leading-normal">
+                                        Building robust Spring Boot applications that streamline backend development and
+                                        scale seamlessly with your business needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
             </div>
-                </div>
-            </section>
-            <section class="work section" id="Projects">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="projects">
-                        <h3>1. Event Management System</h3>
-                        <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                        <h4>Description</h4>
-                        <p><span>Spring Boot</span>- based web application designed to simplify event creation, registration, and management for organizers and participants. Key features include role-based access control, event search and filters, real-time slot tracking, and analytics dashboards.
-                            <br>
-                            <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                            <span class="techs">Techstack: Spring Boot, Java, MySQL, Thymeleaf , Spring Security, RESTful APIs.</span>
-                            <br>
-                            <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                            <span>In Progress</span>: Integration of a real-time payment system for secure and seamless transactions.</p>
-                    </div>
-                    <div class="projects">
-                        <h3>2. Speech to Text</h3>
-                        <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                        <h4>Description</h4>
-                        <p>
-                            This application allows users to convert spoken words into text using the browser's speech recognition API. It supports multiple languages and provides real-time updates of recognized speech.
-                            <br>
-                            <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                            <span class="techs">Techstack: HTML, CSS, JavaScript</span>
-                            <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                            <span>Features</span>
-                            <br>
-                            Speech Recognition: Converts speech to text in real-time. <br>
-                            Language Selection: Choose from a variety of languages for recognition. <br>
-                            Interim Results: Displays interim speech recognition results as the user speaks. <br>
-                            Download Transcript: Allows downloading of the converted text as a .txt file. <br>
-                            Clear Results: Clears the displayed text and disables download functionality. <br>
-                        </p>
-                    </div>
-                    <div class="projects">
-                        <h3>3. Text Extraction From Image</h3>
-                        <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                        <h4>Description</h4>
-                        <p>
-                            This project develops a model that detects text from images and converts it to voice using libraries like Tesseract and pyttsx3.
-                            <br>
-                            <hr style="padding: 0;border: 1px solid black; width: 90%;">
-                            <span class="techs">Techstack: Python,Pytesseract.</span>
-                        </p>
-                    </div>
-                    <div class="projects">
-                        <h3>4. Bus Booking Application</h3>
-                        <h4>Description</h4>
-                        <p>
-                            A web-based bus booking system built with Angular and Spring Boot to provide a seamless experience for users to search, book, and manage bus tickets. The application includes role-based authentication, live seat availability tracking, fare calculation, and booking history management.
-
-                            <br>
-                            <span class="techs">Tech Stack: Spring Boot, Java, MySQL, Angular, Spring Security, RESTful APIs.</span>
-                            <br>
-                            <span>In Progress</span>: Integration of a real-time payment system for secure and seamless transactions.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <!-- <form action="https://api.web3forms.com/submit" class="contact__form">
-                        <input type="hidden" name="access_key" value="5da62cad-4b32-4b37-b6b9-a66320ce4032">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea placeholder="Enter the message" name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
-                    <script src="https://web3forms.com/form.js"></script> -->
-
-                    <p class="mail_ID"><img src="./assets/img/mail.png" width="30" alt=""> guruvenkatesh03@gmail.com</p>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Guru</p>
-            <!-- <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div> -->
-            <p class="footer__copy">
-                Crafted by GV
-            </p>
-        </footer>
+            </div>
+        </section>
+        <section class="work section" id="Projects">
+            <h2 class="section-title">Projects</h2>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                            <!-- Modals -->
+                            <div id="modal1"
+                                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                                <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                    <button onclick="closeModal('modal1')"
+                                        class="absolute top-2 right-3 text-xl font-bold">
+                                        &times;
+                                    </button>
+                                    <h2 class="text-lg font-semibold mb-2">
+                                        Project 1: Resume Analyzer
+                                    </h2>
+                                    <div class="text-black-700 mt-4 text-justify px-4 py-2">
+                                        <h2 class="text-xl font-semibold mb-2">Overview</h2>
+                                        <p>
+                                            An intelligent web-based application designed to
+                                            automatically analyze and evaluate resumes using NLP
+                                            techniques. It helps recruiters and job seekers by
+                                            providing detailed feedback on resume structure, keyword
+                                            optimization, and job-fit analysis.
+                                        </p>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li><strong>Backend:</strong> Spring Boot (Java)</li>
+                                            <li>
+                                                <strong>Microservice (NLP):</strong> Python (spaCy,
+                                                NLTK, Transformers)
+                                            </li>
+                                            <li><strong>Frontend:</strong> Thymeleaf</li>
+                                            <li><strong>Database:</strong> No Database is used</li>
+                                            <li><strong>Others:</strong> RESTful APIs</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">
+                                            Key Features
+                                        </h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Upload resumes in PDF/Word format for analysis</li>
+                                            <li>Extract and parse resume data using Python NLP</li>
+                                            <li>
+                                                Evaluate resume quality based on industry-specific
+                                                keywords, grammar, and formatting
+                                            </li>
+                                            <li>Score resumes and provide improvement suggestions</li>
+                                            <li>Match resume content against job descriptions</li>
+                                            <li>Download the report for your resume as a PDF</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">
+                                            Contributions
+                                        </h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>
+                                                Implemented RESTful endpoints for secure resume upload
+                                                and retrieval
+                                            </li>
+                                            <li>
+                                                Designed dynamic frontend in React for seamless user
+                                                interaction
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="modal2"
+                                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                                <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                    <button onclick="closeModal('modal2')"
+                                        class="absolute top-2 right-3 text-xl font-bold">
+                                        &times;
+                                    </button>
+                                    <h2 class="text-lg font-semibold mb-2">
+                                        Project 2: Meal Share
+                                    </h2>
+                                    <div class="text-black-700 mt-4 text-justify px-4 py-2">
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                        <p>
+                                            A social platform that bridges the gap between food donors
+                                            (like restaurants, households) and receivers (NGOs,
+                                            individuals), aiming to reduce food waste and feed the
+                                            needy through real-time donations.
+                                        </p>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li><strong>Backend:</strong> Spring Boot (Java)</li>
+                                            <li><strong>Frontend:</strong> React.js/Thymeleaf</li>
+                                            <li><strong>Database:</strong> MySQL</li>
+                                            <li>
+                                                <strong>Map Integration:</strong> Google Maps API or
+                                                Leaflet.js
+                                            </li>
+                                            <li><strong>Authentication:</strong> JWT</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">
+                                            Key Features
+                                        </h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Register as a donor or receiver</li>
+                                            <li>
+                                                Post available food with quantity and expiry details
+                                            </li>
+                                            <li>View nearby food listings on a map with filters</li>
+                                            <li>Claim food donations and get pickup directions</li>
+                                            <li>Admin dashboard for user and donation management</li>
+                                            <li>Notification system for new food availability</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">
+                                            Contributions
+                                        </h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Designed REST APIs for user and food management</li>
+                                            <li>Integrated geolocation services and map views</li>
+                                            <li>
+                                                Implemented secure user authentication and role-based
+                                                access
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="modal3"
+                                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                                <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                    <button onclick="closeModal('modal3')"
+                                        class="absolute top-2 right-3 text-xl font-bold">
+                                        &times;
+                                    </button>
+                                    <h2 class="text-lg font-semibold mb-2">
+                                        Project 2: Event Management System
+                                    </h2>
+                                    <div class="text-black-700 mt-4 text-justify px-4 py-2">
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                        <p>
+                                            A web-based system that streamlines the process of managing and attending
+                                            events, conferences, or workshops.
+                                            It supports event creation, attendee registration, and admin analytics.
+                                        </p>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li><strong>Backend:</strong> Spring Boot</li>
+                                            <li><strong>Frontend:</strong> Thymeleaf</li>
+                                            <li><strong>Database:</strong> MySQL</li>
+                                            <li><strong>Others:</strong> Spring Security, MVC architecture</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Key Features</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Create, update, and delete events with date, location, and description
+                                            </li>
+                                            <li>Register users for events with auto-email confirmation</li>
+                                            <li>Role-based login (Admin, Organizer, Attendee)</li>
+                                            <li>Admin dashboard to monitor event statistics and attendance</li>
+                                            <li>Search and filter events by category/date</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Contributions</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Developed end-to-end CRUD functionality for event workflows</li>
+                                            <li>Configured role-based access using Spring Security</li>
+                                            <li>Built dynamic pages using Thymeleaf templates or React</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="modal6"
+                                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                                <div class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto relative">
+                                    <button onclick="closeModal('modal6')"
+                                        class="absolute top-2 right-3 text-xl font-bold">
+                                        &times;
+                                    </button>
+                                    <h2 class="text-lg font-semibold mb-2">
+                                        Project 6: Speech-to-Text Web Application
+                                    </h2>
+                                    <div class="text-black-700 mt-4 text-justify px-4 py-2">
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                        <p>
+                                            A real-time speech-to-text web application that converts spoken words into
+                                            written text using the Web Speech API.
+                                            It supports multiple languages, displays interim results while listening,
+                                            and
+                                            allows users to download or clear the transcribed text.
+                                            This tool enhances accessibility, productivity, and voice-driven interaction
+                                            directly in the browser.
+                                        </p>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li><strong>Frontend:</strong> HTML, CSS, JavaScript (Vanilla)</li>
+                                            <li><strong>API:</strong> Web Speech API (SpeechRecognition)</li>
+                                            <li><strong>Browser Support:</strong> Chrome, Edge (with
+                                                `webkitSpeechRecognition` fallback)</li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Key Features</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Start and stop live speech recognition with a toggle button</li>
+                                            <li>Displays interim transcription while speaking</li>
+                                            <li>Final transcribed text is appended to the result area</li>
+                                            <li>Supports multiple languages selectable from a dropdown</li>
+                                            <li>Download the transcribed text as a `.txt` file</li>
+                                            <li>Clear button to reset the result area</li>
+                                            <li>Handles various errors: no speech, mic not found, permission denied,
+                                                etc.
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Contributions</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Implemented live speech recognition with proper error handling</li>
+                                            <li>Built language selection logic using dynamic option population</li>
+                                            <li>Added support for interim and final transcript handling</li>
+                                            <li>Integrated download and clear functionality for usability</li>
+                                            <li>Designed user feedback via UI updates and alerts</li>
+                                        </ul>
+                                    </div>
+                                    <a class="flex justify-center"
+                                        href="https://guruvenkatesh03.github.io/Transcribe_Audio_03/">
+                                        <button class="px-4 py-1 text-sm bg-green-500 text-white rounded">
+                                            Live Demo
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="modal5"
+                                class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                                <div
+                                    class="bg-white p-6 rounded-lg max-w-4xl max-h-[80vh] overflow-y-auto w-full relative">
+                                    <button onclick="closeModal('modal5')"
+                                        class="absolute top-2 right-3 text-xl font-bold">
+                                        &times;
+                                    </button>
+                                    <h2 class="text-lg font-semibold mb-2">
+                                        Project 5: Voice enabled Text Reader for Visually Impaired
+                                    </h2>
+                                    <div class="text-black-700 mt-4 text-justify px-4 py-2">
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Overview</h3>
+                                        <p>
+                                            Our system offers a voice-activated, completely offline text-to-speech
+                                            framework
+                                            developed for the Raspberry Pi 5 to address the accessibility challenges
+                                            faced
+                                            by visually impaired individuals.
+                                            It captures text from printed documents or images and reads it aloud using
+                                            natural speech synthesis, significantly improving access to printed content.
+                                        </p>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Tech Stack</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li><strong>Language:</strong> Python</li>
+                                            <li><strong>OCR:</strong> EasyOCR for multilingual recognition (English,
+                                                Kannada, Telugu)</li>
+                                            <li><strong>Image Preprocessing:</strong> CLAHE (Contrast Enhancement),
+                                                Median
+                                                Blurring (Noise Reduction)</li>
+                                            <li><strong>Text Refinement:</strong> SymSpell (Spell Correction), IndicNLP
+                                                (Text Normalization)</li>
+                                            <li><strong>Transliteration:</strong> Rule-based Multilingual Attentive
+                                                Transliteration System</li>
+                                            <li><strong>Text-to-Speech:</strong> pyttsx3 (Offline Speech Synthesis)</li>
+
+                                            <li><strong>Hardware:</strong> Raspberry Pi 5 (for portable offline
+                                                deployment)
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Key Features</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Capture or upload images containing text</li>
+                                            <li>Multilingual OCR for English, Kannada, and Telugu using EasyOCR</li>
+                                            <li>Enhanced image preprocessing for better accuracy under poor lighting
+                                            </li>
+                                            <li>Text refinement through spell correction and normalization</li>
+                                            <li>Rule-based transliteration for phonetic clarity of Indic scripts</li>
+                                            <li>Offline text-to-speech conversion using pyttsx3</li>
+                                            <li>Real-time audio output with voice customization (pitch/speed)</li>
+                                            <li>Fully offline support, ideal for remote and low-connectivity
+                                                environments
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="text-lg font-semibold mt-4 mb-1">Contributions</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Developed the full OCR-to-speech pipeline with multilingual support</li>
+                                            <li>Implemented image preprocessing (CLAHE, blurring) for OCR enhancement
+                                            </li>
+                                            <li>Integrated SymSpell and IndicNLP for text correction and normalization
+                                            </li>
+                                            <li>Configured a rule-based transliteration model for clearer speech output
+                                            </li>
+                                            <li>Integrated pyttsx3 for smooth, offline voice synthesis</li>
+                                            <li>Optimized the solution to run efficiently on Raspberry Pi 5 hardware
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+            <div class="work__container bd-grid">
+                <div class="flex flex-col gap-3 pb-3">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJfDesfuQ1GkqxZIszIXqD-r2Jmk7rUCO35H98Nkcd-HK0YU-U3Q7kIuWaiLQfu8YVBllOZzAadVnoSaiytKsZ1BCyh80EgJE1teL88oUFWSD-71Qz7jHPzwm53YUk60RSXbwxNl_jScejyUfoGzIq11GhKpI3zgB7B_Ktx79PlfZXbjLrg8feWPj-XkJOhqXfdG4ka1AzYhcbRkMC75BNBRlbu7RVLm9CI1_yH3C0b0nW4bWl5HZmDHvwAOTOwyf1J8iJHUDvkOY');
+                  "></div>
+                                <div>
+                                    <p class="text-[#0d141c] text-lg font-medium leading-normal">
+                                        Project 1: Resume Analyzer
+                                    </p>
+                                    <br>
+                                    <p class="text-sm font-normal leading-normal text-justify">
+                                        A Web application built with <strong>Spring Boot</strong>, <strong>Python
+                                            NLP</strong>
+                                        for analysis, and <strong>Thymeleaf</strong> for intelligent resume screening
+                                        and feedback.
+                                    </p>
+                                </div>
+                                <div class="flex gap-2 mt-5">
+                                    <button class="px-4 py-1 text-sm bg-teal-700 text-white rounded">
+                                        Individual Project
+                                    </button>
+                                    <a href="https://github.com/GURUVENKATESH03/Resume-Analyzer" target="_blank"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                    <button onclick="openModal('modal1')"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                        More Info
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbjOYEWgFvpGBADDCoXLXin3brrhhOPjpH8QM7-2Qz8yFz_v6HmZiy_7aV-e6PIpM1v925sldMZ_uG0UAMuifw75hBcdNMSNUrtFuEs1tjV-loHbY2XjW3ovlj3nOcXnSTzi2W5-iM_Flh6R_J1B8sxzjdGG7NjMmcLn74qZ3w0u1GfeQ0NR4zJWvhlhdu0Utf5gwfNFNRChjjKIfC-jDtJtPmkNh3x30N1odiO9DxCZyFTZLLVvJBs_O1ZHUnPYHrwzl7do36wAw');
+                  "></div>
+                                <div>
+                                    <p class="text-[#0d141c] text-lg font-medium leading-normal">
+                                        Project 2: Meal Share
+                                    </p>
+                                    <br>
+                                    <p class="text-sm font-normal leading-normal">
+                                        MealShare is a food waste reduction platform that connects
+                                        donors with nearby recipients using <strong>Spring Boot,
+                                            Thymeleaf/React</strong>, and location-based services.
+                                    </p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="px-4 py-1 text-sm bg-teal-700 text-white rounded">
+                                        Individual Project
+                                    </button>
+                                    <a href="https://github.com/GURUVENKATESH03/foodsaver" target="_blank"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                    <button onclick="openModal('modal2')"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                        More Info
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
+                  "></div>
+                                <div>
+                                    <p class="text-[#0d141c] text-lg font-medium leading-normal">
+                                        Project 3: Event Management System
+                                    </p>
+                                    <br>
+                                    <p class="text-sm font-normal leading-normal">
+                                        Developed a <strong>Spring Boot-based</strong> web application to streamline
+                                        <strong>event creation, registration, and overall lifecycle
+                                            management</strong>.
+                                    </p>
+                                </div>
+                                <div class="flex gap-2 mt-5">
+                                    <button class="px-4 py-1 text-sm bg-teal-700 text-white rounded">
+                                        Individual Project
+                                    </button>
+                                    <a href="https://github.com/GURUVENKATESH03/EventManagement" target="_blank"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                    <button onclick="openModal('modal3')"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                        More Info
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
+                  "></div>
+                                <div>
+                                    <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                        Project 4: Some Basic Spring Boot Projects
+                                    </p>
+                                    <br>
+                                    <p class="text-sm font-normal leading-normal">
+                                        A collection of basic <strong>Spring Boot projects</strong> focused on
+                                        building foundational backend skills through practical
+                                        applications like <strong>CRUD operations, RESTful APIs, and data
+                                            management.</strong>
+                                    </p>
+                                </div>
+                                <button class="px-4 py-1 text-sm bg-teal-700 text-white rounded">
+                                    Individual Project
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
+                  "></div>
+                                <div>
+                                    <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                        Project 5: Voice enabled Text Reader for Visually Impaired
+                                    </p>
+                                    <br>
+                                    <p class="text-sm font-normal leading-normal">
+                                        A voice-enabled text reader that <strong>extracts text from images
+                                            and reads it aloud</strong>, designed to assist visually impaired
+                                        users.
+                                    </p>
+                                </div>
+                                <div class="flex gap-2 mt-5">
+                                    <button class="px-4 py-1 text-sm bg-green-700 text-white rounded">
+                                        Group Project
+                                    </button>
+                                    <a href="https://github.com/GURUVENKATESH03/EasyOCR-and-Transliteration"
+                                        target="_blank"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                    <button onclick="openModal('modal5')"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                        More Info
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBut47xW4MoedbnFDgCl3CHht7RQ4BW_FyuG64Q-dBfCG357ScDpY8yrDwyRBmKm3bcKrWeVv4_zE1FA_HeYi1Bc1YMDZax8jObh_E2V3QXPEaQ-fLo1x5jD447n3nsJwa5EYSX2ZftGlL4PiAmZLrN2F0L3lZbZYPN60E3tLGUc5A8uA6A30AzNVS59IvyIBQVD-5vFg4um29jKs1H_S5LrT2qcJPCM5y9AckUQgfbr_gOCAAQAVCgFRsROVItAh5TtwEhAUuoYbw');
+                  "></div>
+                                <div>
+                                    <p class="text-[#0d141c] text-base font-medium leading-normal">
+                                        Project 6: Speech to Text Web Application
+                                    </p>
+                                    <br>
+                                    <p class="text-sm font-normal leading-normal">
+                                        A speech-to-text web application that converts <strong>spoken words
+                                            into written text</strong> in real-time for improved accessibility
+                                        and user interaction.
+                                    </p>
+                                </div>
+                                <div class="flex gap-2 mt-5">
+                                    <button class="px-4 py-1 text-sm bg-teal-700 text-white rounded">
+                                        Individual Project
+                                    </button>
+                                    <a href="https://github.com/your-repo-url-1" target="_blank"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">GitHub</a>
+                                    <button onclick="openModal('modal6')"
+                                        class="px-4 py-1 text-sm bg-[#0c7ff2] text-white rounded hover:bg-gray-700">
+                                        More Info
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                <!-- Projects section with modals -->
+
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="flex justify-center items-center text-[#0d141c] text-md font-normal leading-normal px-4 py-3">
+                To get in touch, please reach out via
+                <a href="mailto:guruvenkatesh11@gmail.com" class="text-blue-600 underline ml-1">email</a>
+            </div>
+        </section>
+    </main>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

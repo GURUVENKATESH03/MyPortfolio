@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -11,7 +11,8 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: "Poppins", sans-serif;
+  /* --body-font: "Poppins", sans-serif; */
+  --body-font: "Space Grotesk" , "Noto Sans", sans-serif ;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -74,12 +75,12 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: black;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
 }
-.section-title::after {
+/* .section-title::after {
   position: absolute;
   content: "";
   width: 64px;
@@ -89,7 +90,7 @@ img {
   margin: auto;
   top: 2rem;
   background-color: var(--first-color);
-}
+} */
 
 .section {
   padding-top: 3rem;
@@ -345,7 +346,7 @@ img {
   color: var(--first-color);
 }
 .MYrow {
-  
+
   margin: 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
@@ -502,7 +503,7 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    
+
     width: 300px;
     bottom: 25%;
   }
